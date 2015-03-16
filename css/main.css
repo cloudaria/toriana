@@ -58,6 +58,12 @@
 	}
   }
 
+  @media (min-width: 450px) {
+    .map-img{
+    	width: 100%;
+    }
+  }
+
   .header-rest{
   	color: #515151;
   }
