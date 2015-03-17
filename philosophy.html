@@ -10,18 +10,23 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <style>
-            body {
-                padding-top: 50px;
-                padding-bottom: 20px;
-            }
-        </style>
+
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
+
+        <style>
+
+            .v-share {
+              position: absolute;
+              right: 36px;
+              top: 6px;
+            }
+        </style>
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
@@ -47,7 +52,7 @@
 
         <div class="container-full1 nav1">
           <nav class="navbar navbar-default">
-  <div class="container-fluid fluid-nav-cus">
+  <div class="container-fluid ">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -65,6 +70,17 @@
         <li><a href="/torihana">Customer Stories <span class="sr-only">(current)</span></a></li>
         <li class="active" href="/torihana/philosophy"><a href="#">Philosophy</a></li>
         <li><a href="/torihana/outlets">Outlets</a></li>
+
+        <div class="v-share">
+      <a class="social-icons icon-flat  " href="https://twitter.com/intent/tweet?url=http://cloudaria.io/torihana/" onclick="openPopup(this.href);"><span class="fa fa-twitter"></span></a>
+
+      <a class="social-icons icon-flat" href="//facebook.com/sharer/sharer.php?u=http://cloudaria.io/torihana/" onclick="openPopup(this.href);"><span class="fa fa-facebook"></span></a>
+
+      <a class="social-icons icon-flat" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://cloudaria.io/torihana/" onclick="openPopup(this.href);"><span class="fa fa-linkedin"></span></a>
+
+      <a class="social-icons icon-flat" href="mailto:?Subject=Amazing%20Content&Body=http://cloudaria.io/torihana/" onclick="openPopup(this.href);"><span class="fa fa-envelope-o"></span></a>
+
+    </div>
 
       </ul>
 

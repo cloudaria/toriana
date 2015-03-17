@@ -74,13 +74,13 @@
         <li><a href="/torihana/outlets">Outlets</a></li>
 
         <div class="v-share">
-      <a class="social-icons icon-flat  " href="https://twitter.com/intent/tweet?url=http://cloudaria.io/torihana/"><span class="fa fa-twitter"></span></a>
+      <a class="social-icons icon-flat  " href="https://twitter.com/intent/tweet?url=http://cloudaria.io/torihana/" onclick="openPopup(this.href);"><span class="fa fa-twitter"></span></a>
 
-      <a class="social-icons icon-flat" href="//facebook.com/sharer/sharer.php?u=http://cloudaria.io/torihana/" onclick="openPopup(this.href);return false;"><span class="fa fa-facebook"></span></a>
+      <a class="social-icons icon-flat" href="//facebook.com/sharer/sharer.php?u=http://cloudaria.io/torihana/" onclick="openPopup(this.href);"><span class="fa fa-facebook"></span></a>
 
-      <a class="social-icons icon-flat" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://cloudaria.io/torihana/" onclick="openPopup(this.href);return false;"><span class="fa fa-linkedin"></span></a>
+      <a class="social-icons icon-flat" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://cloudaria.io/torihana/" onclick="openPopup(this.href);"><span class="fa fa-linkedin"></span></a>
 
-      <a class="social-icons icon-flat" href="mailto:?Subject=Amazing%20Content&Body=http://cloudaria.io/torihana/" onclick="openPopup(this.href);return false;"><span class="fa fa-envelope-o"></span></a>
+      <a class="social-icons icon-flat" href="mailto:?Subject=Amazing%20Content&Body=http://cloudaria.io/torihana/" onclick="openPopup(this.href);"><span class="fa fa-envelope-o"></span></a>
 
     </div>
 
@@ -111,6 +111,14 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script type="text/javascript">
+        var openPopup = function(href){
+          event.preventDefault();
+          var windowOptions = 'scrollbars=yes,resizable=yes,toolbar=no,location=yes,centerscreen,width=550,height=420';
+          window.open(encodeURI(href),'Share', windowOptions);
+        }
+        </script>
 
         <script src="js/main.js"></script>
 
